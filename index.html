@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+
+       
+        <div class="container">
+            <div id="time-box" class="time-container">Current Match</div>
+                <div class="point-container">
+                <div>
+                    <h3 id="home-title">HOME</h3>
+                    <div id="home-point-counter" class="point-box"></div>
+
+                    <div class="btn-container">
+                        <button id="home-point1-btn" class="btn" onclick="addHomePoint(1)">1 PTs</button>
+                        <button id="home-point2-btn" class="btn" onclick="addHomePoint(2)">2 PTs</button>
+                        <button id="home-point3-btn" class="btn" onclick="addHomePoint(3)">3 PTs</button>
+                    </div>
+                </div>
+            
+
+                <div>
+                    <h3 id="guest-title">GUEST</h3>
+                    <div id="guest-point-counter" class="point-box"></div>
+
+                    <div class="btn-container">
+                        <button id="guest-point1-btn" class="btn" onclick="addGuestPoint(1)">1 PTs</button>
+                        <button id="guest-point2-btn" class="btn" onclick="addGuestPoint(2)">2 PTs</button>
+                        <button id="guest-point3-btn" class="btn" onclick="addGuestPoint(3)">3 PTs</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="new-game-container">
+            <button id="time-box" class="new-game-btn" onclick="resetPoints()">New Game</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
